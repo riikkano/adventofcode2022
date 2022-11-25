@@ -8,6 +8,7 @@
             "type": "shell",
             "command": "clang++",
             "args": [
+                "-g",
                 "-Wall",
                 "-std=c++11",
                 "src/day00.cpp",
