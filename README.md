@@ -2,6 +2,8 @@
 
 My solutions to advent of code 2022. The goal is to learn C++.
 
+Link to the challenge: <https://adventofcode.com/>
+
 ## Compiling
 
 ```terminal
