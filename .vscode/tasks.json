@@ -10,7 +10,7 @@
             "args": [
                 "-g",
                 "-Wall",
-                "-std=c++11",
+                "-std=c++20",
                 "src/day00.cpp",
                 "-o",
                 "out/day00"
