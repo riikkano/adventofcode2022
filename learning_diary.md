@@ -1,6 +1,6 @@
-# Learning diary of Advent Of Code 2022
+# Learning diary
 
-This document is summary of what I have learned during each challenge.
+This document summarizes of what I have learned during this challenge.
 
 ## Day 00
 
