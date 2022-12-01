@@ -11,9 +11,9 @@
                 "-g",
                 "-Wall",
                 "-std=c++20",
-                "src/day00.cpp",
+                "src/day01.cpp",
                 "-o",
-                "out/day00"
+                "out/solution"
             ],
             "group": "build",
             "presentation": {
@@ -33,6 +33,5 @@
             ],
             "group": "build",
         },
-        
     ]
 }
