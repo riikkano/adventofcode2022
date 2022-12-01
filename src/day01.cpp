@@ -1,5 +1,4 @@
 #include <algorithm>
-#include <cmath>
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -9,7 +8,7 @@ int main()
 {
     std::ifstream MyReadFile("inputs/day01.txt");
     std::string line;
-    std::vector<uint32_t> sums = {};
+    std::vector<int32_t> sums = {};
 
     int32_t sum = 0;
     while (std::getline(MyReadFile, line))
@@ -26,6 +25,11 @@ int main()
         }
     }
 
-    auto max = std::max_element(sums.begin(), sums.end());
-    std::cout << "hello";
+    // add the last sum of calories
+    sums.push_back(sum);
+
+    std::sort(sums.begin(), sums.end());
+    std::cout << sums[sums.size() - 1] + sums[sums.size() - 2] +
+                     sums[sums.size() - 3]
+              << "\t";
 }
