@@ -75,7 +75,6 @@ int main()
             total_score += 3;
         }
     }
-
-    // Part 1
+    
     std::cout << total_score << "\n";
 }
