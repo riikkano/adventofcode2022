@@ -4,29 +4,32 @@
 #include <string>
 #include <vector>
 
-// Rucksack Reorganization
+// Rucksack Reorganization part 2
 int main()
 {
     std::ifstream MyReadFile("inputs/day03.txt");
-    std::string rucksack;
+    std::string rucksack1;
+    std::string rucksack2;
+    std::string rucksack3;
     int32_t sum = 0;
 
-    while (std::getline(MyReadFile, rucksack))
+    while (std::getline(MyReadFile, rucksack1))
     {
-        std::string compartment2 = rucksack.substr(rucksack.size() / 2);
-        size_t compartment_size = rucksack.size() / 2;
+        std::getline(MyReadFile, rucksack2);
+        std::getline(MyReadFile, rucksack3);
         uint32_t priorities = 0;
-        for (size_t i = 0; i < compartment_size; i++)
+        for (char item : rucksack1)
         {
-            if (compartment2.find(rucksack[i]) != std::string::npos)
+            if (rucksack2.find(item) != std::string::npos &&
+                rucksack3.find(item) != std::string::npos)
             {
-                if (islower(rucksack[i]))
+                if (islower(item))
                 {
-                    priorities += rucksack[i] - 96; // a = 95
+                    priorities += item - 96; // a = 95
                 }
                 else
                 {
-                    priorities += rucksack[i] - 38; // A = 65
+                    priorities += item - 38; // A = 65
                 }
                 break;
             };
