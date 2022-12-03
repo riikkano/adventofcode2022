@@ -7,13 +7,13 @@ Link to the challenge: <https://adventofcode.com/>
 ## Compiling
 
 ```terminal
-clang++ -Wall -std=c++11 day1.cpp
+clang++ -Wall -std=c++20 day1.cpp
 ```
 
 or specify the target file
 
 ```terminal
-clang++ -Wall -std=c++11 day1.cpp -o day1
+clang++ -Wall -std=c++20 day1.cpp -o day1
 ```
 
 <https://stackoverflow.com/questions/9148488/how-do-i-compile-c-with-clang>
