@@ -1,8 +1,6 @@
-#include <algorithm>
 #include <fstream>
 #include <iostream>
 #include <string>
-#include <vector>
 
 // Rucksack Reorganization part 2
 int main()
