@@ -1,10 +1,10 @@
 # Learning diary
 
-This document summarizes of what I have learned during this challenge.
+This document summarizes what I have learned during this challenge.
 
 ## Days 01-03
 
-Problems felt achievable but I had some issues with applying the correct syntax. Some time was also wasted into logical errors in code or just not understanding the problem correctly. The time of completing both parts stayed around two hours, (except the first day took only an hour). I decided not to polish my code too much, but to apply the lessons learned during the day to the next day.
+Problems felt achievable but I had some issues with applying the correct syntax. Some time was also wasted on logical errors in code or just not understanding the problem correctly. The time completing both parts stayed around two hours, (except the first day took only an hour). I decided not to polish my code too much, but to apply the lessons learned during the day to the next day.
 
 I learned
 
@@ -19,11 +19,11 @@ I learned
 
 ## Day 00
 
-I completed the day 1 of year 2021 to create a template for myself this year.
+I completed day 1 of 2021 to create a template for myself this year.
 
-The first part was straight forward and quick to do. However, the second part took longer because at first I read the instructions wrong and the problem became more complicated in my head that it actually was (e.g. the format of the input did not change). After realising the mistake and uderstanding the task, the problem took less than 30min.
+The first part was straightforward and quick to do. However, the second part took longer because at first I read the instructions wrong and the problem became more complicated in my head than it was (e.g. the format of the input did not change). After realizing the mistake and understanding the task, the problem took less than 30min.
 
-I learned how to read text files and how to implement queue in C++. I also learned how to set up a C++ project and how to automate build and launch in vscode.
+I learned how to read text files and how to implement queues in C++. I also learned how to set up a C++ project and how to automate build and launch in VScode.
 
 Resources used:
 
