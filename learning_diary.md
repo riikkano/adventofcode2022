@@ -12,6 +12,7 @@ I learned
 * how to use common [data structures in C++](<https://en.cppreference.com/w/cpp/container>).
 * handling of [strings and characters in C++](<https://en.cppreference.com/w/cpp/string/basic_string>).
 * applying [algorithms library in C++](<https://en.cppreference.com/w/cpp/algorithm>) to different problems.
+* [why `size_t` matters.](<https://www.embedded.com/why-size_t-matters/>)
 * `std::string::find()` returns `std::string::npos` when string of characters is not found, but `some_string[out_of_bounds]` returns `\0` which represents the termination of a string.
 * to apply [modular arithmetics](<https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/)what-is-modular-arithmetic>).
 * to apply [graphs](<https://en.wikipedia.org/wiki/Graph_(abstract_data_type)>). E.g. rock-paper-scissors (day2) problem turned into a graph (part 2 needs "LOOSE" edges):
