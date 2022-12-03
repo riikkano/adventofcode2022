@@ -4,7 +4,7 @@ This document summarizes of what I have learned during this challenge.
 
 ## Days 01-03
 
-Problems felt achivable but I had some issues with applying the correct syntax. Some time was also wasted into logical errors in code or just not understanding the problem correctly. The time of completing both parts stayed around two hours, (except the first day took only an hour). I decided not to polish my code too much, but to apply the lessons learned during the day to the next day.
+Problems felt achievable but I had some issues with applying the correct syntax. Some time was also wasted into logical errors in code or just not understanding the problem correctly. The time of completing both parts stayed around two hours, (except the first day took only an hour). I decided not to polish my code too much, but to apply the lessons learned during the day to the next day.
 
 I learned
 
