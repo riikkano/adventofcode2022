@@ -49,21 +49,18 @@ int main()
         {
             break;
         }
-        size_t char_position = 0;
         size_t location = 0;
-        for (char c : line)
+        for (size_t i = 1; i < line.size();
+             i += 4) // every 4th character is a crate
         {
-            if (char_position % 4 == 1)
+            char c = line.at(i);
+            if (65 <= c && c <= 90) // is uppercase letter in ASCII
             {
-                if (65 <= c && c <= 90) // is uppercase letter in ASCII
-                {
-                    char &crate = c;
-                    std::deque<char> &pile = piles.at(location);
-                    pile.push_back(crate);
-                }
-                location += 1;
+                char &crate = c;
+                std::deque<char> &pile = piles.at(location);
+                pile.push_back(crate);
             }
-            char_position += 1;
+            location += 1;
         }
     }
 
