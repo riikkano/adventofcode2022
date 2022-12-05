@@ -22,14 +22,14 @@ int main()
         }
         for (char c : line)
         {
-            if (65 <= c && c <= 90)
+            if (c == '[') // skip crates
             {
                 break;
             }
 
-            else if (49 <= c && c <= 57) // is number
+            else if ('1' <= c && c <= '9')
             {
-                pile_count = int32_t(c) - 48;
+                pile_count = int32_t(c) - '0';
             }
         }
     }
@@ -54,7 +54,7 @@ int main()
              i += 4) // every 4th character is a crate
         {
             char c = line.at(i);
-            if (65 <= c && c <= 90) // is uppercase letter in ASCII
+            if ('A' <= c && c <= 'Z') // is uppercase letter in ASCII
             {
                 char &crate = c;
                 std::deque<char> &pile = piles.at(location);
