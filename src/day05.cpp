@@ -6,7 +6,7 @@
 // #include <algorithm>
 // #include <unordered_map>
 
-// Day 5: Supply Stacks part 1
+// Day 5: Supply Stacks part 2
 int main()
 {
     std::ifstream MyReadFile("inputs/day05.txt");
@@ -80,11 +80,20 @@ int main()
         end = line.size();
         int32_t position2 = std::stoi(line.substr(start, end - start));
 
+        std::deque<char> pile_to_move = {};
+        // load the pile
         for (size_t i = 1; i <= repetitions; i++)
         {
             char &crate = piles.at(position1 - 1).front();
-            piles.at(position2 - 1).push_front(crate);
+            pile_to_move.push_front(crate);
             piles.at(position1 - 1).pop_front();
+        }
+        // unload the pile
+        for (size_t i = 1; i <= repetitions; i++)
+        {
+            char &crate = pile_to_move.front();
+            piles.at(position2 - 1).push_front(crate);
+            pile_to_move.pop_front();
         }
     }
 
