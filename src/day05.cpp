@@ -56,7 +56,7 @@ int main()
             char c = line.at(i);
             if ('A' <= c && c <= 'Z') // is uppercase letter in ASCII
             {
-                char &crate = c;
+                char crate = c;
                 std::deque<char> &pile = piles.at(location);
                 pile.push_back(crate);
             }
@@ -81,14 +81,14 @@ int main()
         // load the pile
         for (size_t i = 1; i <= repetitions; i++)
         {
-            char &crate = piles.at(position1 - 1).front();
+            const char &crate = piles.at(position1 - 1).front();
             pile_to_move.push_front(crate);
             piles.at(position1 - 1).pop_front();
         }
         // unload the pile
         for (size_t i = 1; i <= repetitions; i++)
         {
-            char &crate = pile_to_move.front();
+            const char &crate = pile_to_move.front();
             piles.at(position2 - 1).push_front(crate);
             pile_to_move.pop_front();
         }
