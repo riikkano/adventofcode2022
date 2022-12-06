@@ -30,11 +30,9 @@ std::list<std::string> split(std::string s, char delimiter)
 int main()
 {
     std::ifstream MyReadFile("inputs/day.txt");
-    std::string line;
+    std::string line{};
     std::getline(MyReadFile, line);
-    std::cout << line;
-    std::string s{"hek,kasi,adoa,23,sjdas,123"};
-    auto splitted = split(s, ',');
+    auto splitted = split(line, ',');
     for (auto i : splitted)
     {
         std::cout << i << std::endl;
