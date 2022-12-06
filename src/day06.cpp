@@ -17,21 +17,22 @@ int main()
     for (size_t i = 0; i < line.size(); i++)
     {
         std::string marker{line.substr(i, marker_size)};
-        size_t unique{0};
+        bool unique{false};
         for (char c : marker)
         {
             size_t pos_first{marker.find_first_of(c)};
             size_t pos_last{marker.find_last_of(c)};
             if (pos_first == pos_last)
             {
-                unique++;
+                unique = true;
             }
             else
             {
+                unique = false;
                 break;
             }
         }
-        if (unique == marker.size())
+        if (unique)
         {
             std::cout << i + marker.size() << std::endl;
             break;
