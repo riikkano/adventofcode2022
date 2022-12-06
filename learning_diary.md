@@ -2,6 +2,29 @@
 
 This document summarizes what I have learned during this challenge.
 
+## Days 04-06
+
+**Day 4** was quick and easy to complete (took less than an hour). Learned that the ranges library (c++20) is not implemented in Apple Clang 14.0. The library could have been used to solve the problem.
+
+**Day 5** felt laborious and took three hours to complete. The hard part was reading and parsing the input.
+
+**Day 6** was quite easy and took around an hour. Solving the second part only required a change of variable.
+
+I learned
+
+* learned to use standard libraries more efficiently.
+* that it is good to use `{}` when initialising variables with named type. This is because `{}` provides type checking in compile-time and provides errors when there is a loss of information (e.g. float to int) `int h = 0.2;` initializes h to 0, but `int h{0.2}`results in an error when compiling.
+
+I also refreshed my memory on some data structures (mostly stacks and queues) and datatypes (e.g. sets).
+
+I also dived into the world of compilers when debugging the code and when trying to figure out why some c++20 features and libraries are not working (e.g. modules and ranges library). Seems that the c++17 standard is a more suitable standard to use with Apple Clang 14 than c++20.
+
+References and tools found:
+
+* [Compiler support for C++20](<https://en.cppreference.com/w/cpp/compiler_support/20>)
+* [XCode release notes](<https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes>)
+* [Compiler explorer](<https://godbolt.org/>)
+
 ## Days 01-03
 
 Problems felt achievable but I had some issues with applying the correct syntax. Some time was also wasted on logical errors in code or just not understanding the problem correctly. The time completing both parts stayed around two hours, (except the first day took only an hour). I decided not to polish my code too much, but to apply the lessons learned during the day to the next day.
